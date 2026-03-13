@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>TotB Grid</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+    body {
+        background: black;
+    } h1 {
+        font: 36pt/1.4em "Zen Dots";
+        color: gold;
+        text-align: center;
+        margin-bottom: -12px;
+    } p {
+        font: 14pt/1.4em "Play";
+        letter-spacing: .75em;
+        color: goldenrod;
+        text-align: center;
+        margin-bottom: 16px;
+    } #container {
+        width: 900px;
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: 48px;
+        display: grid;
+        grid-template: repeat(4,300px)/repeat(3,300px);
+    } #container div:nth-child(2) {
+        grid-column: span 2;
+    } #container div:nth-child(3) {
+        display: none;
+    } #container div:nth-child(4) {
+        grid-column: span 2;
+        grid-row: span 2;
+    } #container div:nth-child(5) {
+        display: none;
+    } #container div:nth-child(7) {
+        display: none;
+    } #container div:nth-child(8) {
+        display: none;
+    } #container div:nth-child(9) {
+        grid-row: span 2;
+    } #container div:nth-child(12) {
+        display: none;
+    }
+</style>
+</head>
+
+<body>
+        <h1>Tales of the Bounty</h1>
+        <p>Government Dogs</p>
+    <div id="container">
+        <div><img style="height: 300px;" src="gridGanymede.png"></div>
+        <div><img style="height: 300px;" src="gridClyde.png"></div>
+        <div>3</div>
+        <div><img style="height: 600px;" src="gridNapua.png"></div>
+        <div>5</div>
+        <div><img style="height: 300px;" src="gridAkari.png"></div>
+        <div>7</div>
+        <div>8</div>
+        <div><img style="height: 600px;" src="gridDahlia.png"></div>
+        <div><img style="height: 300px;" src="gridRaguel.png"></div>
+        <div><img style="height: 300px;" src="gridRemy.png"></div>
+        <div>12</div>
+    </div>
+</body>
