@@ -89,11 +89,16 @@
     } img:hover {
         transform: scale(1.03);
         transition: transform 0.5s;
-    }
+    } .scroll-box {
+  width: 300px;
+  height: 200px;      /* Fix the size so content overflows */
+  overflow: auto;     /* Adds scroll bars automatically when needed */
+}
 </style>
 </head>
 
 <body>
+	<div class="scroll-box">
     <ul>
 	<!-- local link -->
         <a href="portfoliosite.html" style="text-decoration:none"><li>Home</li></a>
@@ -156,6 +161,7 @@
             </a>
             <figcaption>Gender Affirming Care<br>Poster</figcaption>
 		</figure>
+	</div>
 	</div>
     </div>
     </div>
